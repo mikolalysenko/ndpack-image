@@ -1,6 +1,6 @@
 {
   "name": "ndpack-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package an image into a requireable module",
   "main": "unpack.js",
   "bin": {
