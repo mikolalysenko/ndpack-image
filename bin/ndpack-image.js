@@ -1,4 +1,4 @@
-"use strict"
+#!/usr/bin/env node
 
 var getPixels = require("get-pixels")
 var savePixels = require("save-pixels")
