@@ -1,0 +1,14 @@
+"use strict"
+
+var getPixels = require("get-pixels")
+var savePixels = require("save-pixels")
+var concat = require("concat-stream")
+
+getPixels(process.argv[2], function(err, pixels) {
+  savePixels(img, "png").pipe(concat(function(data){
+    var str = ["module.exports=require('ndpack-image')(",
+      img.shape[0], ",",
+      img.shape[1], ",",
+      '"', data.toString("base64"), '")'].join("")
+  }))
+})
