@@ -1,10 +1,10 @@
 "use strict"
 
-module.exports = unpackImage
+module.exports = unpackPNG
 
 var ndarray = require("ndarray")
 
-function unpackImage(w, h, str) {
+function unpackPNG(w, h, str) {
   var canvas = new Canvas(w, h)
   var img = new Image()
   img.src = "data:image/png;base64," + str
