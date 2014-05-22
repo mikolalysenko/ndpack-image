@@ -12,6 +12,8 @@ getPixels(process.argv[2], function(err, img) {
     var str = ["module.exports=require('ndpack-image')(",
       img.shape[0], ",",
       img.shape[1], ",",
+      img.shape[2], ",",
       '"', data.toString("base64"), '")'].join("")
+    console.log(str)
   }))
 })
