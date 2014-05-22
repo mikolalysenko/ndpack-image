@@ -1,0 +1,44 @@
+{
+  "name": "ndpack-image",
+  "version": "1.0.0",
+  "description": "Package an image into a requireable module",
+  "main": "unpack.js",
+  "bin": {
+    "ndpack-image": "bin/ndpack-image.js"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "ndarray": "^1.0.14",
+    "ndarray-imshow": "^1.0.0",
+    "pngparse-sync": "^1.0.1",
+    "save-pixels": "^1.0.0",
+    "get-pixels": "^1.1.0",
+    "concat-stream": "^1.4.5"
+  },
+  "devDependencies": {
+    "beefy": "^1.1.0",
+    "browserify": "^4.1.5"
+  },
+  "scripts": {
+    "test": "node ./bin/ndpack-image.js example/baboon.png > example/baboon.js && node example/example.js",
+    "test-browser": "node ./bin/ndpack-image.js example/baboon.png > example/baboon.js && beefy --open example/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/ndpack-image.git"
+  },
+  "keywords": [
+    "ndarray",
+    "image",
+    "pack"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/ndpack-image/issues"
+  },
+  "browser": "unpack-browser.js",
+  "homepage": "https://github.com/mikolalysenko/ndpack-image"
+}

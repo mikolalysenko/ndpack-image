@@ -4,7 +4,10 @@ var getPixels = require("get-pixels")
 var savePixels = require("save-pixels")
 var concat = require("concat-stream")
 
-getPixels(process.argv[2], function(err, pixels) {
+getPixels(process.argv[2], function(err, img) {
+  if(err) {
+    process.exit(1)
+  }
   savePixels(img, "png").pipe(concat(function(data){
     var str = ["module.exports=require('ndpack-image')(",
       img.shape[0], ",",
