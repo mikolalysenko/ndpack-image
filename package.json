@@ -1,6 +1,6 @@
 {
   "name": "ndpack-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Package an image into a requireable module",
   "main": "unpack.js",
   "bin": {
@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "ndarray": "^1.0.14",
-    "ndarray-imshow": "^1.0.0",
     "pngparse-sync": "^1.0.1",
     "save-pixels": "^1.0.0",
     "get-pixels": "^1.1.0",
     "concat-stream": "^1.4.5"
   },
   "devDependencies": {
+    "ndarray-imshow": "^1.0.0",
     "beefy": "^1.1.0",
     "browserify": "^4.1.5"
   },
