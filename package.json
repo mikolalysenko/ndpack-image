@@ -39,6 +39,5 @@
   "bugs": {
     "url": "https://github.com/mikolalysenko/ndpack-image/issues"
   },
-  "browser": "unpack-browser.js",
   "homepage": "https://github.com/mikolalysenko/ndpack-image"
 }

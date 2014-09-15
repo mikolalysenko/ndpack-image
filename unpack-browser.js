@@ -1,8 +1,10 @@
-"use strict"
+'use strict'
 
 module.exports = unpackPNG
 
 var ndarray = require("ndarray")
+
+//FIXME:  This is broken in FF/Safari
 
 function unpackPNG(w, h, c, str) {
   var canvas = document.createElement("canvas")
