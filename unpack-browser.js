@@ -4,7 +4,7 @@ module.exports = unpackPNG
 
 var ndarray = require("ndarray")
 
-//FIXME:  This is broken in FF/Safari
+//FIXME:  This is broken in FF/Safari, there is a slight race condition when loading PNG images
 
 function unpackPNG(w, h, c, str) {
   var canvas = document.createElement("canvas")
@@ -15,5 +15,5 @@ function unpackPNG(w, h, c, str) {
   var context = canvas.getContext("2d")
   context.drawImage(img, 0, 0)
   var pixels = context.getImageData(0, 0, h, w)
-  return ndarray(pixels.data, [h, w, c], [4*w, 4, 1], 0)
+  return ndarray(pixels.data, [w, h, c], [4, 4*w, 1], 0)
 }

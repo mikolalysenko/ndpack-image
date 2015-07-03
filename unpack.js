@@ -11,5 +11,5 @@ function decodeB64(str) {
 
 function unpackPNG(w, h, c, str) {
   var pixels = parse(decodeB64(str))
-  return ndarray(pixels.data, [h, w, pixels.channels], [pixels.channels*w, pixels.channels, 1], 0)
+  return ndarray(pixels.data, [w, h, pixels.channels], [pixels.channels, pixels.channels*w, 1], 0)
 }
