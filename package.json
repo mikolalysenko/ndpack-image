@@ -13,7 +13,7 @@
     "ndarray": "^1.0.14",
     "pngparse-sync": "^1.0.1",
     "save-pixels": "^1.0.0",
-    "get-pixels": "^1.1.0",
+    "get-pixels": "^3.0.1",
     "concat-stream": "^1.4.5"
   },
   "devDependencies": {
